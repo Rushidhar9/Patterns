@@ -102,7 +102,7 @@ public class DogController {
 	@RequestMapping("trainerAdded")
 	public ModelAndView addNewTrainer(Trainer trainer) {
 		trainerRepo.save(trainer);
-		mv.setViewName("Home");
+		mv.setViewName("home");
 		return mv;
 	}
 	
